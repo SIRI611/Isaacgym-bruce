@@ -15,8 +15,9 @@ class SimEnv():
         self.num_joints_per_leg = 5
         self.num_arms = 2
         self.num_joints_per_arms = 3
-        self.num_joints = self.num_legs * self.num_joints_per_leg + self.num_arms * self.num_joints_per_arms
         
+        self.num_joints = self.num_legs * self.num_joints_per_leg + self.num_arms * self.num_joints_per_arms
+
         self.num_contact_sensors = 4
         
         self.leg_p_gains = [265, 150,  80,  80,    30]
