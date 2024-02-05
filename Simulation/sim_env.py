@@ -10,12 +10,13 @@ from sim_bruce import GazeboSimulator as gs
 class SimEnv():
     def __init__(self) :
         self.simulator = gazint.GazeboInterface(robot_name='bruce', num_joints=self.num_joints, num_contact_sensors=self.num_contact_sensors)
-        
+
         self.num_legs = 2
         self.num_joints_per_leg = 5
         self.num_arms = 2
         self.num_joints_per_arms = 3
         self.num_joints = self.num_legs * self.num_joints_per_leg + self.num_arms * self.num_joints_per_arms
+        
         self.num_contact_sensors = 4
         
         self.leg_p_gains = [265, 150,  80,  80,    30]
