@@ -37,7 +37,6 @@ class SimEnv():
         self.simulation_mode = self.simulation_modes['position']
         self.simulator.set_step_size(1. / self.simulation_frequency)
         self.simulator.set_operating_mode(self.simulation_mode)
-        
         self.simulator.set_all_position_pid_gains(self.p_gains, self.i_gains, self.d_gains)
 
     def reset(self):
