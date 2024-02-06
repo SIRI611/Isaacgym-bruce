@@ -34,7 +34,6 @@ class SimEnv():
         self.simulator = None
         self.simulation_frequency = 1000  # Hz
         self.simulation_modes = {'torque': 0, 'position': 2}
-        
         self.simulation_mode = self.simulation_modes['position']
         self.simulator.set_step_size(1. / self.simulation_frequency)
         self.simulator.set_operating_mode(self.simulation_mode)
