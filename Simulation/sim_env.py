@@ -46,6 +46,7 @@ class SimEnv():
 
         # leg pose
         bpr = np.array([0.04, -0.07, -0.42])  # right foot position  in body frame
+        
         bpl = np.array([0.04, +0.07, -0.42])  # left  foot position  in body frame
         bxr = np.array([1., 0., 0.])          # right foot direction in body frame
         bxl = np.array([1., 0., 0.])          # left  foot direction in body frame
