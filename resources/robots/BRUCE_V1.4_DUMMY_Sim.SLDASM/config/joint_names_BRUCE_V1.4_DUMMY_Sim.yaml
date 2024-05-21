@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'hip_yaw_r', 'hip_roll_r', 'hip_pitch_r', 'knee_pitch_r', 'ankle_pitch_r', 'hip_yaw_l', 'hip_roll_l', 'hip_pitch_l', 'knee_pitch_l', 'ankle_pitch_l', 'shoulder_pitch_r', 'shoulder_roll_r', 'elbow_pitch_r', 'shoulder_pitch_l', 'shoulder_roll_l', 'elbow_pitch_l', ]

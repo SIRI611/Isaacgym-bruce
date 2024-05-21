@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="BRUCE_V1.4_DUMMY_Sim.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.024828 5.7347E-06 0.055158"
+        rpy="0 0 0" />
+      <mass
+        value="1.1686" />
+      <inertia
+        ixx="0.00070455"
+        ixy="-7.1561E-08"
+        ixz="9.7469E-06"
+        iyy="0.00052148"
+        iyz="1.2764E-07"
+        izz="0.00072958" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="hip_yaw_r">
+    <inertial>
+      <origin
+        xyz="1.3106E-08 -0.00058875 0.0041926"
+        rpy="0 0 0" />
+      <mass
+        value="0.74485" />
+      <inertia
+        ixx="0.00041629"
+        ixy="-1.8421E-10"
+        ixz="-7.0173E-09"
+        iyy="0.00027724"
+        iyz="-1.0176E-06"
+        izz="0.00029237" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_yaw_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_yaw_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_yaw_r"
+    type="revolute">
+    <origin
+      xyz="0.029216 -0.075856 -0.039765"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip_yaw_r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="1"
+      upper="1"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="hip_roll_r">
+    <inertial>
+      <origin
+        xyz="-1.5113E-07 8.3267E-17 6.8816E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.012955" />
+      <inertia
+        ixx="4.8839E-07"
+        ixy="-1.0767E-22"
+        ixz="-1.4731E-09"
+        iyy="3.8826E-07"
+        iyz="8.0363E-23"
+        izz="5.5543E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_roll_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_roll_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_roll_r"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="hip_yaw_r" />
+    <child
+      link="hip_roll_r" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="hip_pitch_r">
+    <inertial>
+      <origin
+        xyz="0.14043 -0.0059919 -0.00050208"
+        rpy="0 0 0" />
+      <mass
+        value="0.77973" />
+      <inertia
+        ixx="0.00023708"
+        ixy="1.8984E-05"
+        ixz="-6.7429E-06"
+        iyy="0.00065662"
+        iyz="-1.5538E-07"
+        izz="0.00082345" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_pitch_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_pitch_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_pitch_r"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="hip_roll_r" />
+    <child
+      link="hip_pitch_r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="1"
+      upper="1"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="knee_pitch_r">
+    <inertial>
+      <origin
+        xyz="0.078815 0.0256 -6.3005E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.082937" />
+      <inertia
+        ixx="2.7406E-05"
+        ixy="4.9082E-05"
+        ixz="7.3792E-10"
+        iyy="0.00027396"
+        iyz="-1.6146E-10"
+        izz="0.00028169" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/knee_pitch_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/knee_pitch_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_pitch_r"
+    type="revolute">
+    <origin
+      xyz="0.20495 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip_pitch_r" />
+    <child
+      link="knee_pitch_r" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="ankle_pitch_r">
+    <inertial>
+      <origin
+        xyz="0.014912 0.0053932 0.00021216"
+        rpy="0 0 0" />
+      <mass
+        value="0.013028" />
+      <inertia
+        ixx="3.7535E-06"
+        ixy="-1.5564E-07"
+        ixz="-1.2556E-11"
+        iyy="3.6304E-07"
+        iyz="-1.7171E-10"
+        izz="3.7814E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/ankle_pitch_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/ankle_pitch_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankle_pitch_r"
+    type="revolute">
+    <origin
+      xyz="0.19988 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="knee_pitch_r" />
+    <child
+      link="ankle_pitch_r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="hip_yaw_l">
+    <inertial>
+      <origin
+        xyz="1.3089E-08 -0.00058875 0.0041926"
+        rpy="0 0 0" />
+      <mass
+        value="0.74485" />
+      <inertia
+        ixx="0.00041629"
+        ixy="-1.8417E-10"
+        ixz="-7.0174E-09"
+        iyy="0.00027724"
+        iyz="-1.0176E-06"
+        izz="0.00029237" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_yaw_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_yaw_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_yaw_l"
+    type="revolute">
+    <origin
+      xyz="0.029216 0.075856 -0.039765"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="hip_yaw_l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="hip_roll_l">
+    <inertial>
+      <origin
+        xyz="-1.5113E-07 1.9984E-15 6.8816E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.012955" />
+      <inertia
+        ixx="4.8839E-07"
+        ixy="-1.5271E-23"
+        ixz="-1.4731E-09"
+        iyy="3.8826E-07"
+        iyz="-2.8521E-23"
+        izz="5.5543E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_roll_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_roll_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_roll_l"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="hip_yaw_l" />
+    <child
+      link="hip_roll_l" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="hip_pitch_l">
+    <inertial>
+      <origin
+        xyz="0.14043 -0.0059998 0.00049317"
+        rpy="0 0 0" />
+      <mass
+        value="0.77973" />
+      <inertia
+        ixx="0.00023708"
+        ixy="1.8984E-05"
+        ixz="6.2214E-06"
+        iyy="0.00065662"
+        iyz="1.7227E-07"
+        izz="0.00082345" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_pitch_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/hip_pitch_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hip_pitch_l"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="hip_roll_l" />
+    <child
+      link="hip_pitch_l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="knee_pitch_l">
+    <inertial>
+      <origin
+        xyz="0.078815 0.0256 -6.3005E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.082937" />
+      <inertia
+        ixx="2.7406E-05"
+        ixy="4.9082E-05"
+        ixz="7.3792E-10"
+        iyy="0.00027396"
+        iyz="-1.6146E-10"
+        izz="0.00028169" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/knee_pitch_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/knee_pitch_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_pitch_l"
+    type="revolute">
+    <origin
+      xyz="0.20495 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip_pitch_l" />
+    <child
+      link="knee_pitch_l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="ankle_pitch_l">
+    <inertial>
+      <origin
+        xyz="0.01509 0.0056393 -1.9464E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.013237" />
+      <inertia
+        ixx="3.7506E-06"
+        ixy="-1.5564E-07"
+        ixz="-1.2393E-11"
+        iyy="3.5973E-07"
+        iyz="-1.7033E-10"
+        izz="3.7824E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/ankle_pitch_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/ankle_pitch_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ankle_pitch_l"
+    type="revolute">
+    <origin
+      xyz="0.19988 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="knee_pitch_l" />
+    <child
+      link="ankle_pitch_l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shoulder_pitch_r">
+    <inertial>
+      <origin
+        xyz="-8.5149E-12 -0.00038323 -0.014137"
+        rpy="0 0 0" />
+      <mass
+        value="0.049317" />
+      <inertia
+        ixx="1.2263E-05"
+        ixy="-8.029E-13"
+        ixz="-9.2438E-13"
+        iyy="1.1144E-05"
+        iyz="1.9983E-08"
+        izz="7.7896E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/shoulder_pitch_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/shoulder_pitch_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_pitch_r"
+    type="revolute">
+    <origin
+      xyz="0.029216 -0.12375 0.15299"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="shoulder_pitch_r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shoulder_roll_r">
+    <inertial>
+      <origin
+        xyz="0.057506 -0.0040626 0.00080537"
+        rpy="0 0 0" />
+      <mass
+        value="0.031365" />
+      <inertia
+        ixx="5.3483E-06"
+        ixy="2.2824E-07"
+        ixz="-1.5278E-07"
+        iyy="7.6949E-06"
+        iyz="-2.6367E-11"
+        izz="7.4041E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/shoulder_roll_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/shoulder_roll_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_roll_r"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="shoulder_pitch_r" />
+    <child
+      link="shoulder_roll_r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="elbow_pitch_r">
+    <inertial>
+      <origin
+        xyz="0.021806 3.3426E-09 0.0003601"
+        rpy="0 0 0" />
+      <mass
+        value="0.052484" />
+      <inertia
+        ixx="7.317E-06"
+        ixy="-1.4346E-12"
+        ixz="1.9984E-08"
+        iyy="1.6674E-05"
+        iyz="1.9743E-12"
+        izz="1.525E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/elbow_pitch_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/elbow_pitch_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_pitch_r"
+    type="revolute">
+    <origin
+      xyz="0.1146 -0.005 0.005"
+      rpy="1.5708 0 0" />
+    <parent
+      link="shoulder_roll_r" />
+    <child
+      link="elbow_pitch_r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shoulder_pitch_l">
+    <inertial>
+      <origin
+        xyz="8.5077E-12 0.00038323 -0.014137"
+        rpy="0 0 0" />
+      <mass
+        value="0.049317" />
+      <inertia
+        ixx="1.2263E-05"
+        ixy="-8.029E-13"
+        ixz="9.2438E-13"
+        iyy="1.1144E-05"
+        iyz="-1.9983E-08"
+        izz="7.7896E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/shoulder_pitch_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/shoulder_pitch_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_pitch_l"
+    type="revolute">
+    <origin
+      xyz="0.029216 0.12375 0.15299"
+      rpy="1.5708 1.5708 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="shoulder_pitch_l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shoulder_roll_l">
+    <inertial>
+      <origin
+        xyz="0.057506 0.0040585 0.00080537"
+        rpy="0 0 0" />
+      <mass
+        value="0.031365" />
+      <inertia
+        ixx="5.3483E-06"
+        ixy="-2.2828E-07"
+        ixz="-1.5277E-07"
+        iyy="7.6949E-06"
+        iyz="-2.5388E-11"
+        izz="7.4041E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/shoulder_roll_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/shoulder_roll_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_roll_l"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="shoulder_pitch_l" />
+    <child
+      link="shoulder_roll_l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="elbow_pitch_l">
+    <inertial>
+      <origin
+        xyz="0.021806 3.3426E-09 0.0003601"
+        rpy="0 0 0" />
+      <mass
+        value="0.052484" />
+      <inertia
+        ixx="7.317E-06"
+        ixy="-1.4346E-12"
+        ixz="1.9984E-08"
+        iyy="1.6674E-05"
+        iyz="1.9743E-12"
+        izz="1.525E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/elbow_pitch_l.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://BRUCE_V1.4_DUMMY_Sim.SLDASM/meshes/elbow_pitch_l.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_pitch_l"
+    type="revolute">
+    <origin
+      xyz="0.1146 0.005 0.005"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="shoulder_roll_l" />
+    <child
+      link="elbow_pitch_l" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="1"
+      upper="1"
+      effort="1"
+      velocity="1" />
+  </joint>
+</robot>
