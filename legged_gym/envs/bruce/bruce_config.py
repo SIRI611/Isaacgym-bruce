@@ -62,6 +62,7 @@ class BRUCECfg( LeggedRobotCfg ):
         angular_damping = 0.1
         linear_damping = 0.1
   
+  
     class rewards( LeggedRobotCfg.rewards ):
         soft_dof_pos_limit = 0.9  #实际关节限制角度=最大关节限制角度*该比例
         base_height_target = 0.5
